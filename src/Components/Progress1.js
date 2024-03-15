@@ -46,9 +46,6 @@ const DateWiseActivitiesBarGraph = () => {
 
         const ctx = document.getElementById('activitiesBarGraph');
 
-        ctx.height=60%
-        ctx.width=50%
-
         if (chartRef.current) {
             chartRef.current.destroy();
         }
