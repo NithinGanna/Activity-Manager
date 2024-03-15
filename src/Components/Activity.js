@@ -10,7 +10,7 @@ const Activity = () => {
 
   const fetchActivities = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/activities');
+      const response = await fetch('https://activity-manager-backend-sigma.vercel.app/api/activities');
       if (!response.ok) {
         throw new Error('Failed to fetch activities');
       }
@@ -23,7 +23,7 @@ const Activity = () => {
 
   const handleActionChange = async (activityId, action) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/activities/${activityId}`, {
+      const response = await fetch(`https://activity-manager-backend-sigma.vercel.app/api/activities/${activityId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
