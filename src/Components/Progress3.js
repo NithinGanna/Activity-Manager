@@ -87,7 +87,7 @@ const OverallActivitiesBarGraph = () => {
                 </div>
             ) : (
                 <div style={{ width: '100%', maxWidth: '600px', margin: 'auto' }}>
-                    <canvas id="activitiesBarGraph" width="600" height="600"></canvas>
+                    <canvas id="activitiesBarGraph" style={{ width: '100%', height: 'auto'  }}></canvas>
                 </div>
             )}
         </div>
