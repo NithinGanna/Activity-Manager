@@ -95,7 +95,7 @@ const DateWiseActivitiesBarGraph = () => {
     // };
 
     return (
-        <div>
+        <div className='container-fluid'>
             <Navbar />
             <div style={{ textAlign: 'center', marginTop: '20px' }}>
                 <input type="date" value={selectedDate} onChange={handleDateChange} />
