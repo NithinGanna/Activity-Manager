@@ -12,7 +12,7 @@ const NewActivityForm = ({ onSubmit }) => {
     
     try {
       // Send form data to backend
-      const response = await fetch('http://localhost:5000/api/activities', {
+      const response = await fetch('https://activity-manager-backend-sigma.vercel.app/api/activities', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
