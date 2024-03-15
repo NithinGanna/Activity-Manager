@@ -35,7 +35,7 @@ app.use(bodyParser.json());
 // for purpose of deploying
 app.use(cors(
   {
-    origin: ["https://activity-manager-frontend-blush.vercel.app/Activity"],
+    origin: ["https://activity-manager-frontend-blush.vercel.app"],
     methods: ["POST","GET"],
     credentials: true
   }
