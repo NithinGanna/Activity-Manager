@@ -11,7 +11,7 @@ const OverallActivitiesBarGraph = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/activities');
+                const response = await axios.get('https://activity-manager-backend-sigma.vercel.app/api/activities');
                 setActivityData(response.data);
                 setLoading(false); // Set loading to false when data is fetched
             } catch (error) {
