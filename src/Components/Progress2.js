@@ -84,7 +84,7 @@ const OverallActivitiesPieChart = () => {
     return (
         <div>
             <Navbar />
-            <div style={{ width: '100%', maxWidth: '80%',height:'100%', margin: 'auto' }}>
+            <div style={{ width: '100%', maxWidth: '80%', margin: 'auto' }}>
                 {isLoading ? (
                     <p>Loading...</p>
                 ) : (
