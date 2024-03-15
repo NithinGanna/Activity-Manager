@@ -82,13 +82,13 @@ const OverallActivitiesPieChart = () => {
     }, [activityData]);
 
     return (
-        <div>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
             <Navbar />
             <div style={{ width: '100%', maxWidth: '600px', margin: 'auto' }}>
                 {isLoading ? (
                     <p>Loading...</p>
                 ) : (
-                    <canvas id="activitiesPieChart" width="400" height="600"></canvas>
+                    <canvas id="activitiesPieChart" style={{ width: '100%', height: 'auto'  }}></canvas>
                 )}
             </div>
         </div>
