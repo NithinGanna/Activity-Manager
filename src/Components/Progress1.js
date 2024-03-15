@@ -76,7 +76,7 @@ const DateWiseActivitiesBarGraph = () => {
 
     const fetchData = async (date) => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/activities?date=${date}`);
+            const response = await axios.get(`https://activity-manager-backend-sigma.vercel.app/api/activities?date=${date}`);
             setActivityData(response.data);
             setLoading(false);
         } catch (error) {
