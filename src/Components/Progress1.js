@@ -107,7 +107,7 @@ const DateWiseActivitiesBarGraph = () => {
                 </div>
             ) : (
                 <div style={{ width: '100%', maxWidth: '60%', margin: 'auto' }}>
-                    <canvas id="activitiesBarGraph" style={{ width: '100%', height: '400px' }}></canvas>
+                    <canvas id="activitiesBarGraph" style={{ width: '100%', height: '600px' }}></canvas>
                 </div>
             )}
         </div>
