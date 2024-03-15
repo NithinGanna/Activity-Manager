@@ -41,6 +41,10 @@ app.use(cors(
   }
 ));
 
+app.get('/',(req,res)=>{
+  res.json("Hello");
+})
+
 // Routes
 app.get('/api/activities', async (req, res) => {
   try {
