@@ -11,7 +11,7 @@ const OverallActivitiesPieChart = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/activities');
+                const response = await axios.get('https://activity-manager-backend-sigma.vercel.app/api/activities');
                 const data = response.data;
                 setActivityData(data);
             } catch (error) {
