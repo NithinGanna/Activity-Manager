@@ -7,7 +7,7 @@ const app = express();
 const PORT = 5000;
 
 // MongoDB connection
-const DB_URL = mongodb+srv://Nithin:Gnithin%4007062004@cluster0.xltvixq.mongodb.net/?retryWrites=true&w=majority;
+const DB_URL = "mongodb+srv://Nithin:Gnithin%4007062004@cluster0.xltvixq.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(DB_URL)
 .then(() => {
