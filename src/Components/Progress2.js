@@ -82,18 +82,15 @@ const OverallActivitiesPieChart = () => {
     }, [activityData]);
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+        <div>
             <Navbar />
-            <div style={{ width: '100%', maxWidth: '600px', margin: 'auto' }}>
-                {isLoading ? (
-                    <p>Loading...</p>
-                ) : (
-                    <div style={{ width: '100%', maxWidth: '600px', margin: 'auto' }}>
-                        <canvas id="activitiesPieChart" width="600" height="600"></canvas>
-                    </div>
-                    // <canvas id="activitiesPieChart" style={{ width: '100%', height: 'auto'  }}></canvas>
-                )}
-            </div>
+            {isLoading ? (
+                <p>Loading...</p>
+            )  : (
+                <div style={{ width: '100%', maxWidth: '600px', margin: 'auto' }}>
+                    <canvas id="activitiesBarGraph" width="600" height="600"></canvas>
+                </div>
+            )}
         </div>
     );
 };
