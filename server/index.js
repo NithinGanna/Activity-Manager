@@ -30,7 +30,7 @@ const Activity = mongoose.model('Activity', activitySchema);
 // Middleware
 app.use(bodyParser.json());
 
-app.use(cors());
+// app.use(cors());
 
 // for purpose of deploying
 app.use(cors(
