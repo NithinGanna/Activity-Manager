@@ -88,7 +88,7 @@ const OverallActivitiesPieChart = () => {
                 <p>Loading...</p>
             )  : (
                 <div style={{ width: '100%', maxWidth: '600px', margin: 'auto' }}>
-                    <canvas id="activitiesBarGraph" width="600" height="600"></canvas>
+                    <canvas id="activitiesPieChart" width="600" height="600"></canvas>
                 </div>
             )}
         </div>
