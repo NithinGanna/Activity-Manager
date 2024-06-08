@@ -3,12 +3,15 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 const app = express();
 const PORT = 5000;
 
 // MongoDB connection
-const DB_URL = "mongodb+srv://Nithin:Gnithin%4007062004@cluster0.xltvixq.mongodb.net/?retryWrites=true&w=majority";
-
+const DB_URL = process.env.MONGO_URI;
+// console.log(DB_URL);
 mongoose.connect(DB_URL)
 .then(() => {
   console.log('Database connected successfully');
@@ -29,21 +32,7 @@ const Activity = mongoose.model('Activity', activitySchema);
 
 // Middleware
 app.use(bodyParser.json());
-
-// app.use(cors());
-
-// for purpose of deploying
-app.use(cors(
-  {
-    origin: ["https://activity-manager-frontend-two.vercel.app"],
-    methods: ["POST","GET"],
-    credentials: true
-  }
-));
-
-app.get('/',(req,res)=>{
-  res.json("Backend of Activity Manager");
-})
+app.use(cors());
 
 // Routes
 app.get('/api/activities', async (req, res) => {
